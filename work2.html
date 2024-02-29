@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="bg" src="./lol.jpg">
+            <img id="man" src="./khabib.png">
+        </a-assets>
+        <a-text value="643020361-6" position="0 -5 -2.2" animation="property: position; to: 0 1.5 -2.2; dur: 3000; easing: linear; loop: false"></a-text>
+        <a-sphere position="0 1.25 3" radius="1.25" color="#00CCFF" animation="property: position; to: 0 1.5 -100; dur: 50000; easing: linear; loop: True"></a-sphere>
+        <a-text value="Chonpat Krongyuti" position="-30 1 -2" animation="property: position; to: 0 1 -2; dur: 3000; easing: linear; loop: false"></a-text>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color="#884422"></a-plane>
+        <a-entity position="0 1 -5" rotation="0 45 0" animation="property: rotation; to: 0 405 0; loop: true; dur: 12000">
+            <a-box position="-1 0.5 -5" rotation="0 0 0" src="#man"></a-box>
+        </a-entity>
+        <a-sky src="#bg"></a-sky>
+    </a-scene>
+  </body>
+</html>
